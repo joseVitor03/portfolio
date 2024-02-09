@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-export function Reveal({ children }: any) {
+export function Reveal({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -11,8 +11,8 @@ export function Reveal({ children }: any) {
         visible: { opacity: 1, x: 0 },
       } }
       initial="hidden"
-      whileInView="visible"
       viewport={ { once: true } }
+      whileInView="visible"
       transition={ { duration: 0.5, delay: 0.5 } }
     >
       {children}
