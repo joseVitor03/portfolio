@@ -1,0 +1,25 @@
+.section_tecs {
+  margin: 5%;
+}
+
+
+.title_tec {
+  color: whitesmoke;
+}
+
+.container_tecs {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid whitesmoke;
+  padding: 5%;
+  margin-top: 2%;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 255, 254);
+}
+
+.logo {
+  width: 100px;
+  margin: 2%;
+}
