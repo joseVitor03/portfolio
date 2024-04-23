@@ -8,18 +8,100 @@
 }
 
 .container_tecs {
+  width: 60vw;
   display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: wrap;
   border: 2px solid whitesmoke;
-  padding: 5%;
+  padding: 2%;
   margin-top: 2%;
   border-radius: 5px;
-  justify-content: center;
+}
+
+.container_not_clicked {
+  width: 48vw;
+  margin: 2%;
+  overflow: hidden;
+}
+
+.container_clicked {
+  width: 48vw;
+  display: flex;
+  margin: 2%;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card {
+  height: 100px;
+  display: flex;
   align-items: center;
+  border-radius: 10px;
   background-color: rgb(185, 255, 254);
+  margin-bottom: 4%;
+  color: black;
 }
 
 .logo {
   width: 100px;
   margin: 2%;
+}
+
+img {
+  height: 80px;
+}
+
+
+.title_front, .title_back {
+  text-align: center;
+  margin: 2% 0 5%;
+  color: black;
+  background-color: rgb(185, 255, 254);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.title_front:hover, .title_back:hover {
+  text-align: center;
+  margin: 2% 0 5%;
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+h1 {
+  text-align: center;
+  margin: 2%;
+  color: whitesmoke;
+}
+
+h4 {
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 360px) {
+  .container_tecs {
+    width: 90vw;
+  }
+
+  .container_clicked {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_clicked h4 {
+    display: none;
+  }
+
+  .card {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container_clicked h4 {
+    display: none;
+  }
 }
