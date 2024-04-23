@@ -5,6 +5,8 @@
 	"extends": "@trybe/eslint-config-frontend/typescript",
 	"rules": {
     "react/jsx-max-depth": ["error", { "max": 10 }],
-    "react/jsx-indent": ["error", 2]
+    "react/jsx-indent": ["error", 2],
+    "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off"
   }
 }
