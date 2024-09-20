@@ -33,14 +33,12 @@ function Home() {
           <Reveal key="about me">
             <h2>Sobre mim:</h2>
             <p>
-              Nunca tive contato com programação,
-              sendo apenas um usuário comum da internet,
-              mas sempre tive interesse em entender como essa área funciona
-              e como as pessoas que trabalham nela se dedicam.
-              Após completar 18 anos, decidi deixar para trás o mundo
-              do futebol, onde dedicava meu tempo.
-              Agora estou determinado e em busca de me tornar
-              um desenvolvedor Full Stack cada vez mais habilidoso.
+              Nunca tive contato com programação, sendo apenas um usuário
+              comum da internet, mas sempre tive interesse em entender como
+              essa área funciona e como as pessoas que trabalham nela se
+              dedicam. Após completar 18 anos, decidi me aventurar no mundo
+              da tecnologia. Tenho experiência em React.js, Next.js, TypeScript,
+              Node.js, e estou sempre buscando aprimorar minhas habilidades.
             </p>
           </Reveal>
         </section>
