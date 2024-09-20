@@ -1,4 +1,4 @@
-import foto from './9ca698c2e10fe61210fe9947c5e4be66.gif';
+import foto from '../../utils/images/IMG-20240325-WA0003 (1).jpg';
 import styled from './index.module.css';
 import { Reveal } from '../../components/Reveal/Reveal';
 import Stacks from '../../components/Stacks/Stacks';
