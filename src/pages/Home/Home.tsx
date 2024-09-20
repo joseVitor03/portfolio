@@ -1,33 +1,16 @@
-import { VscGithub } from 'react-icons/vsc';
-import { SiGmail } from 'react-icons/si';
-import { FaLinkedin } from 'react-icons/fa6';
 import foto from './9ca698c2e10fe61210fe9947c5e4be66.gif';
 import styled from './index.module.css';
 import { Reveal } from '../../components/Reveal/Reveal';
 import Stacks from '../../components/Stacks/Stacks';
+import ListProjects from '../../components/ListProjects/ListProjects';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
   return (
     <div className={ styled.App }>
-      <header className={ styled.headerHome }>
-        <nav>
-          <a href="/">
-            <VscGithub className={ styled.icon } />
-            {' '}
-            Github
-          </a>
-          <a href="/">
-            <SiGmail className={ styled.icon } />
-            Gmail
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/jose-vitor-dev/" rel="noreferrer">
-            <FaLinkedin className={ styled.icon } />
-            Linkedin
-          </a>
-
-        </nav>
-      </header>
-      <main>
+      <Header />
+      <section>
         <Reveal key="title">
           <section
             className={ styled.container1 }
@@ -48,7 +31,7 @@ function Home() {
         </Reveal>
         <section className={ styled.aboutMe }>
           <Reveal key="about me">
-            <h1>Sobre mim:</h1>
+            <h2>Sobre mim:</h2>
             <p>
               Nunca tive contato com programação,
               sendo apenas um usuário comum da internet,
@@ -62,7 +45,9 @@ function Home() {
           </Reveal>
         </section>
         <Stacks />
-      </main>
+        <ListProjects />
+      </section>
+      <Footer />
     </div>
   );
 }

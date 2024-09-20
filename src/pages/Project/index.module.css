@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #020B2A;
+}
+
+.containerVideo {
+  width: 70vw;
+  margin: 4% auto;
+}
+
+.containerVideo video {
+  width: 100%;
+}
+
+.descriptions {
+  margin: 2%;
+}
+
+.btns {
+  width: 50vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btns a {
+  background-color: blue;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1.5%;
+  margin: 1%;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.btns a:hover {
+  background-color: rgb(215, 242, 254);
+  color: black;
+}
+
+h3 {
+  margin-top: 2%;
+  color: whitesmoke;
+}
+
+p {
+  margin: 1%;
+  color: whitesmoke;
+}

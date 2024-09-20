@@ -1,107 +1,75 @@
-.section_tecs {
-  margin: 5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.sectionTecs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.title_tec {
+.containerBtnsTecs {
+  width: 30vw;
+  display: flex;
+  margin: 0 auto;
+}
+
+.btnTec {
+  color: whitesmoke;
+  border-radius: 0;
+  border-bottom: 4px solid gray;
+}
+
+.btnTecActive {
+  border-bottom: 4px solid red;
+  border-radius: 5px;
   color: whitesmoke;
 }
 
-.container_tecs {
-  width: 60vw;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: wrap;
-  border: 2px solid whitesmoke;
-  padding: 2%;
-  margin-top: 2%;
+.btnTec:hover, .btnTecActive:hover {
+  cursor: pointer;
+  background: none;
   border-radius: 5px;
 }
 
-.container_not_clicked {
-  width: 48vw;
-  margin: 2%;
-  overflow: hidden;
+.btnTecActive:hover {
+  cursor: auto;
+  background: none;
 }
 
-.container_clicked {
-  width: 48vw;
+.containerTecs {
+  width: 60vw;
   display: flex;
-  margin: 2%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: rgb(3, 3, 148);
+}
+
+@keyframes fadein {
+  from { 
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
+}
+
+.containerTecs div {
+  display: flex;
   flex-direction: column;
-  border-radius: 10px;
-}
-
-.card {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  background-color: rgb(185, 255, 254);
-  margin-bottom: 4%;
-  color: black;
-}
-
-.logo {
-  width: 100px;
-  margin: 2%;
-}
-
-img {
-  height: 80px;
-}
-
-
-.title_front, .title_back {
-  text-align: center;
-  margin: 2% 0 5%;
-  color: black;
-  background-color: rgb(185, 255, 254);
-  border-radius: 10px;
-  padding: 2%;
-}
-
-.title_front:hover, .title_back:hover {
-  text-align: center;
-  margin: 2% 0 5%;
-  color: black;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-h1 {
-  text-align: center;
-  margin: 2%;
   color: whitesmoke;
+  align-items: center;
+  animation: fadein 1s;
 }
 
-h4 {
-  margin-left: 5%;
-}
-
-@media screen and (max-width: 360px) {
-  .container_tecs {
-    width: 90vw;
-  }
-
-  .container_clicked {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container_clicked h4 {
-    display: none;
-  }
-
-  .card {
-    padding: 5%;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .container_clicked h4 {
-    display: none;
-  }
+.containerTecs img {
+  height: 80px;
+  margin: 5%;
 }

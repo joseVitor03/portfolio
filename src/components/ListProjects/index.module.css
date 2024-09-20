@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.titles, h1, h2 {
+  text-align: center;
+  color: whitesmoke;
+  margin: 0.5% auto;
+}
+
+.containerProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+  width: 75vw;
+}
+
+.containerProject {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.cardNext {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  animation: fadein 1s;
+}
+
+.cardBefore {
+  width: 95%;
+  display: flex;
+  border: 1px solid whitesmoke;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  animation: fadeout 1s;
+}
+
+@keyframes fadein {
+  from { 
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeout {
+  from { 
+    opacity: 0;
+    transform: translateX(120px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+.cardBefore .imageProject, .cardNext .imageProject {
+  width: 100%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 1%;
+}
+
+
+.containerProject button:disabled:hover {
+  background: none;
+  cursor: auto;
+}
+
+.containerProject .iconBtn {
+  font-size: 40px;
+  color: whitesmoke;
+  border-radius: 30px;
+}
+
+.iconBtn:hover {
+  cursor: pointer;
+  background-color: blue;
+  transition: 0.5s;
+}
+
+.containerProject .iconBtnDisable {
+  color: rgb(109, 107, 107);
+  font-size: 40px;
+}
+
+.containerCard {
+  width: 50vw;
+  background-color: blue;
+}
+
+.stacksProject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  margin: 0 2% 1% 0;
+  justify-content: flex-end;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -21,12 +21,11 @@ export const arrayFront = [
   { id: 5, photo: redux, name: 'redux' },
   { id: 6, photo: jest, name: 'jest' },
   { id: 7, photo: eslint, name: 'eslint' },
-  { id: 8, photo: node, name: 'node' },
-  { id: 9, photo: vitest, name: 'vitest' },
+  { id: 8, photo: vitest, name: 'vitest' },
 ];
 
 export const arrayBack = [
-  { id: 8, photo: node, name: 'node' },
+  { id: 10, photo: node, name: 'node' },
   { id: 3, photo: express, name: 'express' },
   { id: 4, photo: sequelize, name: 'sequelize' },
   { id: 5, photo: mysql, name: 'mysql' },
