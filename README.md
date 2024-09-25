@@ -1,3 +1,3 @@
-# Create Trybe App
+## Meu Portfólio
 
-Esse é um projeto criado com as principais tecnologias utilizadas no módulo de front-end da Trybe.
+`Onde apresento meus projetos e competências`
