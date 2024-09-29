@@ -22,9 +22,14 @@
   margin-top: 2%;
 }
 
-.frontend {
+.fullStack {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px rgb(226, 226, 226);
+}
+
+.introduction {
+  width: 50vw;
+  padding: 2%;
 }
 
 .introduction, .foto {
@@ -35,11 +40,21 @@
 .introduction h3 {
   font-size: 45px;
   color: azure;
-
+  margin: 2% auto;
 }
 
-.introduction h5 {
-  font-size: 20px;
+.btnCurriculum {
+  background-color: #012ec4;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 800;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.btnCurriculum:hover {
+  background-color: #345ee9;
 }
 
 .foto img {

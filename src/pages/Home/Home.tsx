@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import foto from '../../utils/images/IMG-20240325-WA0003 (1).jpg';
 import styled from './index.module.css';
 import { Reveal } from '../../components/Reveal/Reveal';
@@ -5,6 +6,7 @@ import Stacks from '../../components/Stacks/Stacks';
 import ListProjects from '../../components/ListProjects/ListProjects';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import curriculum from '../../utils/Meu Currículo.pdf';
 
 function Home() {
   return (
@@ -21,8 +23,17 @@ function Home() {
                 <br />
                 Desenvolvedor
                 <br />
-                <span className={ styled.frontend }>Full Stack</span>
+                <span className={ styled.fullStack }>Full Stack</span>
               </h3>
+              <Link
+                className={ styled.btnCurriculum }
+                to={ curriculum }
+                target="_blank"
+                download
+              >
+                Baixar Currículo
+
+              </Link>
             </div>
             <div className={ styled.foto }>
               <img src={ foto } alt="" />
