@@ -3,6 +3,7 @@
   height: 10vh;
   background-color: rgb(4, 24, 89);
   box-shadow: 0 0 15px whitesmoke;
+  overflow: hidden;
 }
 
 .headerHome nav {
