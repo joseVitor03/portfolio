@@ -143,3 +143,10 @@ button {
   cursor: pointer;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 575px) {
+
+  .containerProjects, .containerProject {
+    width: 95vw;
+  }
+}

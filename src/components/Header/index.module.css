@@ -46,3 +46,12 @@
   color: whitesmoke;
   font-size: 20px;
 }
+
+@media screen and (max-width: 475px) {
+  .headerHome > nav {
+    width: 100vw;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

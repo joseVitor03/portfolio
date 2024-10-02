@@ -73,3 +73,20 @@
   height: 80px;
   margin: 5%;
 }
+
+@media screen and (max-width: 575px) {
+  .headerHome > nav {
+    width: 100vw;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .containerBtnsTecs {
+    width: 70vw;
+  }
+
+  .containerTecs {
+    width: 95vw;
+  }
+}
