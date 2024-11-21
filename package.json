@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
-    "postbuild": "next-sitemap",
     "dev": "vite --open",
     "lint": "eslint -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
     "preview": "vite preview"
@@ -26,6 +25,7 @@
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint-plugin-react": "^7.33.2",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-sitemap": "^0.7.1"
   }
 }
