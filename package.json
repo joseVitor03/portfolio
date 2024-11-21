@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
+    "postbuild": "next-sitemap",
     "dev": "vite --open",
     "lint": "eslint -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
     "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^11.0.3",
+    "next-sitemap": "^4.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
