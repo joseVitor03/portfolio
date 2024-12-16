@@ -51,7 +51,7 @@
 @media screen and (max-width: 475px) {
   .headerHome > nav {
     width: 100vw;
-    padding: 5%;
+    padding: 2%;
     align-items: center;
     justify-content: space-between;
   }

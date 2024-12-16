@@ -13,22 +13,19 @@
 .containerProjects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 2% auto;
   width: 75vw;
 }
 
 .containerProject {
-  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 1s;
 }
 
-.cardNext {
-  width: 95%;
+.card {
+  width: 55vw;
   display: flex;
   align-items: center;
   text-align: center;
@@ -36,19 +33,39 @@
   flex-direction: column;
   border: 1px solid whitesmoke;
   border-radius: 10px;
+}
+
+.cardMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.data {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cardNext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: fadein 1s;
 }
 
 .cardBefore {
-  width: 95%;
   display: flex;
-  border: 1px solid whitesmoke;
   align-items: center;
-  text-align: center;
-  text-align: center;
   justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
   animation: fadeout 1s;
 }
 
@@ -75,15 +92,18 @@
 }
 
 
-.cardBefore .imageProject, .cardNext .imageProject {
+.card .imageProject {
   width: 100%;
+}
+
+.cardMobile .imageProject {
+  width: 90%;
 }
 
 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2% auto;
   background: none;
   border: none;
   font-size: 20px;
@@ -128,6 +148,7 @@ button {
 .details {
   width: 100%;
   display: flex;
+  align-self: flex-end;
   margin: 0 2% 1% 0;
   justify-content: flex-end;
   align-items: center;

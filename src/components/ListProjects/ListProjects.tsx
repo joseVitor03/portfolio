@@ -23,7 +23,9 @@ export default function ListProjects() {
     <Reveal>
       <section className={ styles.containerProjects }>
         <h2>Principais Projetos</h2>
-        <div className={ styles.containerProject }>
+        <div
+          className={ styles.containerProject }
+        >
           <button
             id="back"
             disabled={ indexProject === 0 }
@@ -40,31 +42,40 @@ export default function ListProjects() {
             className={ previoProject === 'next'
               ? styles.cardNext : styles.cardBefore }
           >
-            <img
-              className={ styles.imageProject }
-              src={ projects[indexProject].image }
-              alt="service management"
-            />
-            <h2>{projects[indexProject].name}</h2>
-            <h4 className={ styles.titles }>{projects[indexProject].typeProject}</h4>
-            <h4 className={ styles.titles }>Stacks:</h4>
-            <div className={ styles.stacksProject }>
-              { projects[indexProject].tecnologiesFront.map((stack) => (
-                <img
-                  key={ stack.id }
-                  src={ stack.logo }
-                  alt="tecnologia"
-                />
-              ))}
-            </div>
-            <div className={ styles.details }>
-              <Link
-                className={ styles.link }
-                to={ `/projects/${projects[indexProject].id}` }
-              >
-                Mais detalhes
-              </Link>
-              <TbArrowBadgeRightFilled />
+            <div
+              className={ projects[indexProject].typeProject === 'Mobile'
+                ? styles.cardMobile : styles.card }
+            >
+              <img
+                className={ styles.imageProject }
+                src={ projects[indexProject].image }
+                alt={ projects[indexProject].name }
+              />
+              <div className={ styles.data }>
+                <h2>{projects[indexProject].name}</h2>
+                <h4 className={ styles.titles }>
+                  {projects[indexProject].typeProject}
+                </h4>
+                <h4 className={ styles.titles }>Stacks:</h4>
+                <div className={ styles.stacksProject }>
+                  { projects[indexProject].tecnologiesFront.map((stack) => (
+                    <img
+                      key={ stack.id }
+                      src={ stack.logo }
+                      alt="tecnologia"
+                    />
+                  ))}
+                </div>
+                <div className={ styles.details }>
+                  <Link
+                    className={ styles.link }
+                    to={ `/projects/${projects[indexProject].id}` }
+                  >
+                    Mais detalhes
+                  </Link>
+                  <TbArrowBadgeRightFilled />
+                </div>
+              </div>
             </div>
           </div>
           <button

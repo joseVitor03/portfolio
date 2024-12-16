@@ -2,6 +2,8 @@ import serviceManagement from './images/page-services.png';
 import wallet from './images/wallet.png';
 import videoService from './videos/Gravação de tela de 18-09-2024 16:25:43.webm';
 import videoWallet from './videos/Gravação de tela de 19-09-2024 17:38:45.webm';
+import appMovie from './images/screen-movies.png';
+import videoAppMovies from './videos/Gravação de tela de 16-12-2024 16:48:31.webm';
 
 const node = 'https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white';
 const typescript = 'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white';
@@ -56,4 +58,21 @@ Visualizar o total de gastos convertidos para uma moeda de sua escolha.`,
   linkRepoFront: 'https://github.com/joseVitor03/project-wallet',
   linkRepoBack: '',
   video: videoWallet,
+}, {
+  id: 3,
+  typeProject: 'Mobile',
+  name: 'App Movies',
+  image: appMovie,
+  description: `O APP Movies tem como objetivo listar
+  os Filmes e Séries e algumas funcionalidades.`,
+  tecnologiesFront: [{
+    id: 1,
+    logo: typescript },
+  { id: 3, logo: 'https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' },
+  { id: 12, logo: 'https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37' },
+  ],
+  tecnologiesBack: [],
+  linkRepoFront: 'https://github.com/joseVitor03/app-movies',
+  linkRepoBack: '',
+  video: videoAppMovies,
 }];
