@@ -6,7 +6,7 @@ import Stacks from '../../components/Stacks/Stacks';
 import ListProjects from '../../components/ListProjects/ListProjects';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import curriculum from '../../utils/Meu Curriculo.pdf';
+import curriculum from '../../utils/Meu-Curriculo.pdf';
 
 function Home() {
   return (
